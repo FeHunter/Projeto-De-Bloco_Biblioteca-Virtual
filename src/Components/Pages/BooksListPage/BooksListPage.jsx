@@ -30,7 +30,9 @@ export function BooksListPage({ searchFor }) {
   function FilterBooks() {
     let updateList = [...book];
     updateList = updateList.filter((book) => {
-      return book.title.toLowerCase().includes(searchFor.toLowerCase());
+      return book.title.toLowerCase().includes(searchFor.toLowerCase())
+      || book.author.toLowerCase().includes(searchFor.toLowerCase())
+      || book.genre.toLowerCase().includes(searchFor.toLowerCase());
     });
     return updateList.map((book, index) => {
       return <CardBook key={index} book={book} />;
