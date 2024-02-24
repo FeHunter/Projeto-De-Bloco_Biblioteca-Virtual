@@ -1,0 +1,31 @@
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  font-size: 1.2em;
+}
+
+.inputArea {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.inputSearch {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  font-size: 1em;
+}
+.inputSearch:focus, .inputSearch:selection {
+  border: none;
+}
+
+@media (min-width: 768px){
+  .inputArea {
+    font-size: 1.3em;
+  }
+  .inputSearch {
+    margin-left: 20px;
+  }
+}
