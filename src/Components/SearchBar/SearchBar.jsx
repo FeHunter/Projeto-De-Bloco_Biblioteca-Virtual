@@ -16,6 +16,7 @@ export function SearchBar({ setSearch }) {
         <i class="fa-solid fa-magnifying-glass"></i>
         <input
           className={style.inputSearch}
+          id="searchBar"
           type="text"
           placeholder="type to search..."
           value={type}
